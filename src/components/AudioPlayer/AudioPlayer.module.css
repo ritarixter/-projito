@@ -1,0 +1,191 @@
+.player {
+  display: flex;
+  flex-direction: column;
+}
+
+.player__time {
+  font: 14px "PT Sans", sans-serif;
+  line-height: 18px;
+  margin-left: 20px;
+}
+
+.player__soundtrack {
+  width: 362px;
+  height: 63px;
+}
+
+.player__button {
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 28px;
+  width: 28px;
+  padding: 0;
+  background-position: center;
+}
+
+.player__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #e7e4de;
+  width: 684px;
+  height: 108px;
+  margin: 28px auto 0;
+  border-radius: 35px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.player__button_stop {
+  background-image: url("../../images/player/stop.svg");
+}
+
+.player__button_reverse_clockwise {
+  background-image: url("../../images/player/Reverse_clockwise.svg");
+  margin-left: 4px;
+  margin-right: 24px;
+}
+
+.player__button_reverse_anticlockwise {
+  background-image: url("../../images/player/Reverse_anticlockwise.svg");
+  margin-left: 24px;
+}
+
+.player__button_play {
+  background-image: url("../../images/player/Play.svg");
+}
+
+.player__button_mute {
+  background-image: url("../../images/player/Mute.svg");
+  position: absolute;
+  right: 40px;
+}
+
+/*.button_mute__container{
+  height: 24px;
+  width: 24px;
+}
+
+.volume {
+  width: 80px;
+}
+
+.button_mute__container > .container__volume{
+  display: none;
+}
+
+.container__volume{
+  background-color: #A5CDAB;
+  padding: 5px;
+  border-radius: 35px;
+  position: absolute;
+  top: -65px;
+  transform: rotate(-90deg);
+  right: -27px;
+}
+
+.button_mute__container:hover > .container__volume {
+  display: block;
+}*/
+
+.player__button_mute_on {
+  background-image: url("../../images/player/Mute.svg");
+  position: absolute;
+  right: 40px;
+  opacity: 0.5;
+}
+
+.player__button:hover:not(.player__button_mute) {
+  opacity: 50%;
+} 
+
+
+@media screen and (max-width: 1023px) {
+  .player__time {
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 24px;
+  }
+
+  .player__container {
+    width: 612px;
+    height: 84px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 16px;
+  }
+
+  .player__button {
+    width: 24px;
+    height: 24px;
+  }
+
+  .player__button_reverse_clockwise {
+    background-image: url("../../images/player/Reverse_clockwise_320px.svg");
+    margin-right: 20px;
+  }
+
+  .player__button_mute {
+    background-image: url("../../images/player/Mute_320px.svg");
+    right: 32px;
+  }
+
+  .player__button_mute_on {
+    background-image: url("../../images/player/Mute_320px.svg");
+    right: 32px;
+  }
+
+  .player__button_play {
+    background-image: url("../../images/player/Play_320px.svg");
+  }
+
+  .player__button_reverse_anticlockwise {
+    background-image: url("../../images/player/Reverse_anticlockwise_320px.svg");
+  }
+
+  .player__soundtrack {
+    width: 327px;
+  }
+
+  .player__button_stop {
+    background-image: url("../../images/player/stop_320px.svg");
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .player__time {
+    margin-left: 10px;
+  }
+
+  .player__container {
+    width: 336px;
+    height: 48px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .player__button_mute {
+    right: 12px;
+  }
+
+  .player__button_mute_on {
+    right: 12px;
+  }
+
+  .player__button_reverse_anticlockwise {
+    margin-left: 8px;
+  }
+
+  .player__button_reverse_clockwise {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+
+  .player__soundtrack {
+    width: 145px;
+  }
+}

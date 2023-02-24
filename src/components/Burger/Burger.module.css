@@ -1,0 +1,61 @@
+.bodyFixed {
+  overflow: hidden;
+}
+
+.burgerContainer {
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 5px 4px;
+  margin-right: 4px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burger {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #323232;
+  transition: transform 0.2s ease-in-out;
+}
+
+.burger::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -5.5px;
+  width: 100%;
+  height: 100%;
+  background-color: #323232;
+  transition: top 0.2s ease-in-out 0.3s;
+}
+
+.burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5.5px;
+  width: 100%;
+  height: 100%;
+  background-color: #323232;
+  transition: bottom 0.2s ease-in-out 0.3s, transform 0.2s ease-in-out;
+}
+
+.burgerOpened {
+  transition: transform 0.2s ease-in-out 0.3s;
+  transform: rotate(45deg);
+}
+
+.burgerOpened::before {
+  transition: top 0.2s ease-in-out;
+  top: 0;
+}
+
+.burgerOpened::after {
+  transition: bottom 0.2s ease-in-out, transform 0.2s ease-in-out 0.3s;
+  bottom: 0;
+  transform: rotate(-90deg);
+}

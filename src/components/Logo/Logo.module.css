@@ -1,0 +1,32 @@
+.logo {
+  display: flex;
+  gap: 20px;
+}
+
+.mainLogo {
+  display: block;
+  width: 175px;
+  height: 29px;
+  background-image: url('../../images/logo/logo.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.universityLogo {
+  composes: mainLogo;
+  width: 99px;
+  height: 28px;
+  background-image: url('../../images/logo/university-logo.svg');
+}
+
+@media screen and (max-width: 620px) {
+  .mainLogo {
+    width: 151px;
+    height: 25px;
+  }
+
+  .universityLogo {
+    width: 85px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,266 @@
+.article {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.article h1 {
+  margin: 0;
+  font: 46px "WF", sans-serif;
+  line-height: 55px;
+  max-width: 678px;
+  width: 100%;
+  color: #323232;
+  padding: 38px 0 8px;
+  border-bottom: 1px solid #f7f4f0;
+  font-weight: 400;
+  text-align: center;
+}
+
+.article h2 {
+  font: 26px "WF", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 28px;
+  max-width: 650px;
+  width: 100%;
+}
+
+.article p {
+  font: 18px "PT Sans", sans-serif;
+  padding: 28px 0 0;
+  width: 100%;
+  margin: 0 auto 0;
+  font-weight: 400;
+  text-align: left;
+  line-height: 30px;
+  max-width: 676px;
+}
+
+.article p:last-child {
+  margin-bottom: 52px;
+}
+
+.article blockquote {
+  font: 26px "WF", sans-serif;
+  font-weight: 400;
+  padding: 0 0 0 16px;
+  border-left: 2px #f7f4f0 solid;
+  margin: 28px auto 0;
+  max-width: 676px;
+  box-sizing: border-box;
+}
+
+.image {
+  width: 910px;
+  margin: 28px auto 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  max-width: 910px;
+}
+
+.image img {
+  max-height: 461px;
+  width: 100%;
+  display: flex;
+  object-fit: contain;
+  background: #f7f4f0;
+  box-sizing: border-box;
+  padding: 30px 0;
+}
+
+figcaption {
+  font: 14px "PT Sans", sans-serif;
+  line-height: 18px;
+  text-align: start;
+  align-self: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 678px;
+  padding: 16px 0 16px;
+  border-bottom: 1px solid #f7f4f0;
+  background-color: white;
+}
+
+.article ul {
+  font-size: 18px;
+  line-height: 30px;
+  padding: 12px;
+  background-color: #f7f4f0;
+  max-width: 678px;
+  margin: 28px auto 0;
+  box-sizing: border-box;
+}
+
+.article ul li {
+  margin-left: 20px;
+}
+
+.video {
+  margin: 28px auto 0;
+}
+
+.video iframe {
+  width: 678px;
+  height: 360px;
+}
+
+.video__container {
+  max-width: 678px;
+  height: 360px;
+  width: 100%;
+  height: 100%;
+}
+
+.article a {
+  text-decoration: none;
+  color: #323232;
+  background: #f7f4f0;
+  border-radius: 4px;
+  padding: 0 4px;
+  cursor: pointer;
+}
+
+.article a:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 1023px) {
+  .video__container {
+    max-width: 612px;
+    height: 320px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video iframe {
+    width: 612px;
+    height: 320px;
+  }
+
+  .image img {
+    max-height: 340px;
+    padding: 24px 0;
+  }
+
+  .video {
+    margin-top: 16px;
+  }
+
+  .article h2 {
+    margin-top: 16px;
+    max-width: 612px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .article blockquote {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 612px;
+  }
+
+  .image {
+    max-width: 736px;
+    margin-top: 16px;
+  }
+
+  .article ul {
+    padding: 8px;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 612px;
+    margin-top: 16px;
+  }
+
+  .article ul li {
+    margin-left: 18px;
+  }
+
+  .article p {
+    padding-top: 16px;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 612px;
+  }
+
+  .article h1 {
+    max-width: 612px;
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 16px;
+  }
+
+  figcaption {
+    max-width: 612px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .article {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  .video iframe {
+    width: 338px;
+    height: 168px;
+  }
+
+  .image img {
+    max-height: 340px;
+    padding: 12px 0;
+  }
+
+  .article blockquote {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .article h1 {
+    max-width: 336px;
+    font-size: 32px;
+    line-height: 1.2;
+    padding: 20px 0 4px;
+  }
+
+  .article p {
+    line-height: 20px;
+  }
+
+  .article h2 {
+    max-width: 336px;
+    margin-top: 24px;
+  }
+
+  .article ul {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 336px;
+  }
+
+  .article ul li {
+    margin-left: 16px;
+  }
+
+  .article p:last-child {
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .article {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

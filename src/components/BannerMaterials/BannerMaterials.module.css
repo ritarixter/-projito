@@ -1,0 +1,171 @@
+@import url(../../vendor/fonts.css);
+
+.image {
+  grid-column: 1;
+  grid-row: 1/4;
+  width: 329px;
+  height: 440px;
+  object-fit: cover;
+}
+
+.subtitle {
+  grid-column: 2;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  font: normal 1.8em/1 "WF", "PT Sans", sans-serif;
+  color: #323232;
+}
+
+.text {
+  grid-column: 2;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font: normal 1em/1.3 "PT Sans", sans-serif;
+  color: rgba(50, 50, 50, 0.7);
+}
+
+.buttonswrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 329px;
+  height: 50px;
+  box-sizing: border-box;
+  font: normal 1em/1.3 "PT Sans", sans-serif;
+  text-decoration: none;
+  color: #323232;
+  border-radius: 8px;
+  /* border: none; */
+  cursor: pointer;
+
+  /* text-align: center; */
+  margin-right: 20px;
+  background-color: transparent;
+  border: 1px solid #a5cdab;
+}
+
+.buttonRight {
+  background: #a5cdab;
+  margin-right: 0;
+}
+
+.button:hover {
+  border-color: #97ba9c;
+}
+
+.button:active {
+  border-color: #7a9f80;
+}
+
+.button:disabled {
+  color: rgba(12, 6, 38, 0.7);
+  /* background-color: transparent; */
+  border-color: rgba(165, 205, 171, 0.3);
+  cursor: unset;
+}
+
+.buttonRight:hover {
+  background-color: #97ba9c;
+}
+
+.buttonRight:active {
+  background-color: #7a9f80;
+}
+
+.buttonRight:disabled {
+  background-color: rgba(165, 205, 171, 0.3);
+}
+
+.arrow {
+  width: 16.5px;
+  height: 12px;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 1400px) {
+  .image {
+    width: 174px;
+    height: 259px;
+  }
+
+  .subtitle {
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+
+  .text {
+    line-height: 1.28;
+    max-width: 419px;
+  }
+
+  .button {
+    margin-right: 12px;
+  }
+
+  .arrow {
+    margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .button {
+    max-width: 237px;
+    height: 48px;
+  }
+}
+
+@media screen and (max-width: 777px) {
+  .buttonRight {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .image {
+    grid-column: 1;
+    grid-row: 2;
+    width: 164px;
+    height: 258px;
+  }
+
+  .subtitle {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 0;
+    line-height: 1;
+    text-align: center;
+    max-width: 320px;
+  }
+
+  .text {
+    grid-column: 1;
+    grid-row: 3;
+    max-width: 336px;
+    margin-bottom: 0;
+  }
+
+  .button {
+    max-width: 335px;
+    height: 50px;
+    margin-right: 0;
+    margin-top: 16px;
+    order: 2;
+  }
+
+  .arrow {
+    width: 11px;
+    height: 8px;
+    margin-left: 14.5px;
+  }
+}

@@ -1,0 +1,166 @@
+@import url(../../vendor/fonts.css);
+
+.card {
+  width: 328px;
+  height: 428px;
+  background-color: #e7e4de;
+}
+
+.link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.link:hover,
+.link:active {
+  opacity: 0.8;
+}
+
+.tag {
+  position: absolute;
+  top: -16px;
+  max-width: calc(328px - 16px * 2);
+  margin: 0;
+  padding: 8px 32px;
+  box-sizing: border-box;
+  background: #a5cdab;
+  border-radius: 8px;
+  font: normal 0.7em/1.28 "PT Sans", sans-serif;
+  text-transform: uppercase;
+  color: #323232;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 0;
+  padding: 0;
+  font: normal 1.3em/1 "WF", "PT Sans", sans-serif;
+  color: #323232;
+  text-align: center;
+  white-space: pre;
+}
+
+.image {
+  width: 200px;
+  height: 224px;
+  margin: 12px 0;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 213px;
+  height: 100%;
+  max-height: 72px;
+  margin: 0;
+  padding: 0;
+  font: normal 0.7em/1.31 "PT Sans", sans-serif;
+  text-align: center;
+  color: rgb(50, 50, 50);
+}
+
+.itemslider + .itemslider {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+  .card {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .card {
+    width: 238px;
+    height: 360px;
+  }
+
+  .tag {
+    top: -12px;
+    max-width: calc(250px - 16px * 2);
+    padding: 4px 16px;
+  }
+
+  .title {
+    max-width: 213px;
+    max-height: 44px;
+    line-height: 1.22;
+  }
+
+  .image {
+    width: 173px;
+    height: 180px;
+  }
+
+  .text {
+    max-width: 213px;
+    height: 72px;
+    font-size: 1em;
+    line-height: 1.28;
+  }
+
+  .itemslider + .itemslider {
+    margin-left: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    flex-shrink: 0;
+    width: 276px;
+    margin-right: 12px;
+  }
+
+  .card:last-child {
+    margin-right: 0;
+  }
+
+  .tag {
+    padding: 4px 12px;
+    font-size: 0.85em;
+    line-height: 1.33;
+  }
+
+  .title {
+    max-width: 252px;
+  }
+
+  .image {
+    width: 160px;
+    height: 180px;
+  }
+
+  .text {
+    max-width: 252px;
+    font-size: 0.85em;
+    line-height: 1.33;
+  }
+
+  .materials .itemslider + .itemslider {
+    margin: 0;
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* .itemslider + .itemslider {
+    margin: 16px 0 0;
+  } */
+}

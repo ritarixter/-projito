@@ -1,0 +1,229 @@
+.article {
+    max-width: 328px;
+    max-height: 526px;
+    border-radius: 8px;
+    transition: .5s ease;
+    opacity: 1;
+}
+
+.article:hover {
+    opacity: .8;
+}
+
+.article__link {
+    text-decoration: none;
+}
+
+.article__back_color {
+    background-color: #E7E4DE;
+}
+
+.article__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-image: url(../../images/stalin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article__back {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-image: url(../../images/blocada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article__portrait {
+    width: 204px;
+    height: 204px;
+    border-radius: 180px;
+    background-image: url(../../images/zelenina.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto 20px auto;
+}
+
+.article__topic {
+    width: 91%;
+    margin: 0 auto 286px auto;
+    padding-top: 12px;
+    color: #F5F5F5;
+    font-size: 16px;
+    line-height: 20.7px;
+    font-weight: 400;
+    font-family: "PT Sans", sans-serif;
+    text-align: left;
+}
+
+.article__topicSpec {
+    margin-bottom: 250px;
+}
+
+.article__title {
+    width: 91%;
+    margin: 0 auto 22px auto;
+    color: #F5F5F5;
+    font-size: 26px;
+    line-height: 100%;
+    font-weight: 400;
+    font-family: "WF", sans-serif;
+    text-align: left;
+}
+
+.article__title_color {
+    color: #323232;
+}
+
+.article__title_top {
+    padding-top: 32px;
+}
+
+.article__position_center {
+    text-align: center;
+}
+
+.article__subtitle {
+    width: 91%;
+    margin: 0 auto 13px auto;
+    color: #F5F5F5;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "PT Sans", sans-serif;
+    text-align: left;
+}
+
+.article__paragraph {
+    width: 91%;
+    margin: 0 auto;
+    color: #F5F5F5;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: "PT Sans", sans-serif;
+    text-align: left;
+}
+
+.article__text {
+    width: 91%;
+    margin: 0 auto 70px auto;
+    color: #323232;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+}
+
+.article__text_uppercase {
+    text-transform: uppercase;
+}
+
+.article__background {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 1124px) {
+    .article__topic {
+        font-size: 12px;
+        line-height: 15.5px;
+        margin-bottom: 219px;
+    }
+
+    .article__title {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 4px;
+    }
+
+    .article__subtitle {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 4px;
+    }
+
+    .article__paragraph {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .article__display_none {
+        display: none;
+    }
+
+    .article__portrait {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 4px;
+    }
+
+    .article__title_top {
+        padding-top: 12px;
+    }
+
+    .article__text {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .article {
+        max-width: 180px;
+        max-height: 280px;
+    }
+
+    .article__topic {
+        margin-bottom: 170px;
+    }
+
+    .article__title {
+        margin-bottom: 12px;
+    }
+
+    .article__portrait {
+        width: 86px;
+        height: 86px;
+        margin-bottom: 0;
+    }
+
+    .article__text {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .article {
+        max-width: 252px;
+        max-height: 352px;
+    }
+
+    .article__display_none {
+        display: block;
+    }
+
+    .article__portrait {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 12px;
+    }
+
+    .article__text {
+        margin-bottom: 28px;
+    }
+
+    .article__background {
+        height: 155px;
+        border-radius: 8px;
+        background-color: #E7E4DE;
+        overflow: hidden;
+    }
+
+    .article__mobile_color {
+        color: #323232;
+    }
+}

@@ -1,0 +1,113 @@
+/*Стили карточек ОПЫТ ЧИТАТЕЛЯ*/
+.card {
+  margin-right: 20px;
+  border-radius: 8px;
+  background: rgba(231, 228, 222, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-height: 528px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardTitle {
+  margin-top: 32px;
+  margin-bottom: 0;
+  font-family: WF;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0;
+  text-align: center;
+}
+.image {
+  max-width: 204px;
+  max-height: 204px;
+  border-radius: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.description {
+  margin: 0;
+  font-family: PT Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.tag {
+  margin-bottom: 28px;
+  font-family: PT Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .card {
+    min-height: 95%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .cardTitle {
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .description {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .image {
+    width: 86px;
+    height: 86px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .tag {
+    margin-bottom: 10px;
+    margin-top: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    min-height: 365px;
+    max-width: 236px;
+    margin-right: 0;
+  }
+  .image {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 160px;
+    height: 160px;
+  }
+  .cardTitle {
+    margin-top: 16px;
+  }
+
+  .description {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}

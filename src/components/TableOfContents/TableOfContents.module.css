@@ -1,0 +1,122 @@
+.contents__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.contents {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-color: #E7E4DE;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    transition: top 0.3s;
+    padding: 12px 12px;
+}
+
+.contents__back {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 17px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.contents__table {
+    position: relative;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'WF', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #323232;
+    cursor: pointer;
+}
+
+.contents__table:after {
+    position: absolute;
+    top: 8px;
+    left: 100px;
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    transform: rotate(315deg);
+}
+
+.contents__burger {
+    border: none;
+    background-color: transparent;
+    width: 16px;
+    height: 14px;
+    margin-right: 20px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.contents__burger_close {
+    width: 17px;
+    height: 17px;
+}
+
+.contents__navBar {
+    width: 100%;
+    background-color: #E7E4DE;
+}
+
+.contents__boxNav {
+    width: 95%;
+    height: 168px;
+    max-height: 168px;
+    margin: 0 auto 0 auto;
+    border-top-color: rgba(50, 50, 50, 0.3);
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+.contents__boxNav:nth-child(2n) {
+    margin-bottom: 158px;
+    border-top-color: rgba(50, 50, 50, 0.3);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-color: rgba(50, 50, 50, 0.3);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.contents__links {
+    height: 168px;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contents__link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #323232;
+}
+
+.contents__li {
+    display: inline-block;
+    margin-bottom: 28px;
+}
+
+.contents__li:nth-child(3n) {
+    margin-bottom: 24px;
+}

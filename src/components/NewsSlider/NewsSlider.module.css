@@ -1,0 +1,181 @@
+.mobileView {
+  display: none;
+}
+
+.slider {
+  padding-left: 20px;
+  width: 100%;
+}
+
+.sliderContainer {
+  width: 100%;
+}
+
+.slide {
+  margin-right: 20px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 32px;
+}
+
+.title {
+  margin: 16px 0 24px 0;
+  padding: 0;
+  font: normal 2.3em/1.2 "WF", "PT Sans", sans-serif;
+  color: #323232;
+}
+
+.buttons {
+  display: flex;
+  column-gap: 12px;
+}
+
+.button {
+  padding: 0;
+  opacity: 1;
+  background: #fff;
+  border: none;
+  display: block;
+}
+
+.button img {
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #323232;
+  border-radius: 50px;
+}
+
+.button:disabled {
+  opacity: 0.5;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.date,
+.type {
+  margin: 0;
+  margin-bottom: 8px;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.dataContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 212px;
+  max-width: 212px;
+  max-height: 212px;
+}
+
+.text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: rgba(50, 50, 50, 0.6);
+}
+
+.dotGroup button {
+  margin-top: 70px;
+  height: 4px;
+  width: 16.66%;
+  border: none;
+}
+
+.dotGroup button:disabled {
+  background-color: #323232;
+}
+
+@media screen and (max-width: 1440px) {
+  .slider {
+    padding-left: 12px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .button img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .imageContainer {
+    margin-bottom: 8px;
+  }
+
+  .date,
+  .type {
+    margin-bottom: 4px;
+    margin-right: 12px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .image {
+    min-height: 120px;
+    max-width: 102px;
+    max-height: 120px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .dotGroup button {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobileView {
+    display: block;
+  }
+
+  .slider {
+    padding-left: 0;
+    width: auto;
+  }
+
+  .CarouselProvider {
+    display: none;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .image {
+    min-height: 160px;
+    max-width: 100%;
+    max-height: 160px;
+    margin-top: 16px;
+  }
+
+  .text {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
